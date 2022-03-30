@@ -34,4 +34,7 @@
       <Filter>src\sort</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
 </Project>

@@ -1,11 +1,13 @@
 Target = alg
 CC = g++
 
-CPP := $(shell echo ./*.cpp)
+CFLAGS := -Wall -O0 -g
+
+CPP := $(shell echo src/*.cpp src/sort/*.cpp)
 OBJ := $(patsubst %.cpp, %.o, $(CPP))
 
 $(Target) : $(OBJ)
-	$(CC) $^ -o $@
+	$(CC) $^ $(CFLAGS) -o $@
 
 clean :
 	rm -f $(OBJ)

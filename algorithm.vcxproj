@@ -29,6 +29,9 @@
     <ClInclude Include="src\algorithm.h" />
     <ClInclude Include="src\sort\sort_entrance.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
