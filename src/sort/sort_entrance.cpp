@@ -3,7 +3,7 @@
 
 void sort()
 {
-	int arr[] = { 9, 13, 6, 5, 2, 3, 8, 4 };
+	int arr[] = { 9, 13, 6, 5, 2, 3, 8, 4, 7 };
 	int len = sizeof(arr) / sizeof(int);
 	std::cout << "arr size: " << len << std::endl;
 
