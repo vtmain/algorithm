@@ -10,6 +10,8 @@
 #include <sys/time.h>
 #endif
 
+#include "sort/sort_entrance.h"
+
 class process_time
 {
 public:
@@ -35,9 +37,5 @@ private:
 	
 };
 
+void alg_run();
 void print_arr(int arr[], int len);
-
-
-///////////////////////////////////////////////
-
-void bubble_sort();

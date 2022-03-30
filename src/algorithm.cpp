@@ -1,4 +1,5 @@
 ﻿#include "algorithm.h"
+#include "sort/sort_entrance.h"
 
 
 process_time::process_time(bool use_usec)
@@ -59,4 +60,9 @@ void print_arr(int arr[], int len)
 	}
 	oss << "]";
 	std::cout << oss.str() << std::endl;
+}
+
+void alg_run()
+{
+	sort();
 }

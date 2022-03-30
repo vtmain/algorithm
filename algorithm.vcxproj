@@ -18,6 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\algorithm.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\sort\bubble.cpp" />
+    <ClCompile Include="src\sort\quick.cpp" />
+    <ClCompile Include="src\sort\sort_entrance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\algorithm.h" />
+    <ClInclude Include="src\sort\sort_entrance.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,12 +149,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="algorithm.cpp" />
-    <ClCompile Include="algorithm.h" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="sort\bubble.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

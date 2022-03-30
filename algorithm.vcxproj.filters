@@ -6,21 +6,32 @@
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="src\sort">
-      <UniqueIdentifier>{08711e71-beb8-49c8-94ab-45c510487766}</UniqueIdentifier>
+      <UniqueIdentifier>{00a96911-6bbd-470a-b175-dfaa4fc3134f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\algorithm.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="algorithm.h">
+    <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="algorithm.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="sort\bubble.cpp">
+    <ClCompile Include="src\sort\bubble.cpp">
       <Filter>src\sort</Filter>
     </ClCompile>
+    <ClCompile Include="src\sort\quick.cpp">
+      <Filter>src\sort</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sort\sort_entrance.cpp">
+      <Filter>src\sort</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\algorithm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sort\sort_entrance.h">
+      <Filter>src\sort</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

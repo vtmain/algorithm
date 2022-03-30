@@ -5,7 +5,7 @@
 
 int main()
 {
-    bubble_sort();
+    alg_run();
 
 #ifdef _WIN32
     system("PAUSE");
