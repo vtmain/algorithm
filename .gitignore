@@ -1,5 +1,6 @@
 alg
 /.vs
+/*.vcxproj
 /*.user
 /*.swp
 /x64/*
