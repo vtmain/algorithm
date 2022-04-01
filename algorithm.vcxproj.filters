@@ -36,5 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="makefile" />
+    <None Include="README.md" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>
