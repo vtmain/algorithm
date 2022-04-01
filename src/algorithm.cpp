@@ -35,14 +35,14 @@ process_time::~process_time()
 	end = GetTickCount64();
 	std::cout << "start: " << start << std::endl;
 	std::cout << "end: " << end << std::endl;
-	std::cout << "process time: " << end - start << "ms" << std::endl;
+	std::cout << "process time: " << end - start << "(ms)" << std::endl;
 #else
 	timeval val;
 	gettimeofday(&val, NULL);
 	_end = _usec ? (val.tv_sec * 1000000 + val.tv_usec) : (val.tv_sec * 1000 + val.tv_usec / 1000);
 	std::cout << "start: " << _start<< std::endl;
-	std::cout << "end: " << _end << std::endl;
-	std::cout << "process time: " << _end - _start << (_usec ? "us" : "ms") << std::endl;
+	std::cout << "  end: " << _end << std::endl;
+	std::cout << "process time: " << _end - _start << (_usec ? "(us)" : "(ms)") << std::endl;
 #endif
 }
 
