@@ -8,9 +8,7 @@ void bubble(int arr[], int len)
 		{
 			if (arr[j] > arr[j + 1])
 			{
-				int tmp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = tmp;
+				swap(arr, j, j + 1);
 			}
 		}
 	}

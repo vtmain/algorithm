@@ -38,4 +38,3 @@ private:
 };
 
 void alg_run();
-void print_arr(int arr[], int len);

@@ -33,34 +33,21 @@ process_time::~process_time()
 {
 #ifdef _WIN32
 	end = GetTickCount64();
-	std::cout << "start: " << start << std::endl;
-	std::cout << "end: " << end << std::endl;
+//	std::cout << "start: " << start << std::endl;
+//	std::cout << "end: " << end << std::endl;
 	std::cout << "process time: " << end - start << "(ms)" << std::endl;
 #else
 	timeval val;
 	gettimeofday(&val, NULL);
 	_end = _usec ? (val.tv_sec * 1000000 + val.tv_usec) : (val.tv_sec * 1000 + val.tv_usec / 1000);
-	std::cout << "start: " << _start<< std::endl;
-	std::cout << "  end: " << _end << std::endl;
+//	std::cout << "start: " << _start<< std::endl;
+//	std::cout << "  end: " << _end << std::endl;
 	std::cout << "process time: " << _end - _start << (_usec ? "(us)" : "(ms)") << std::endl;
 #endif
 }
 
 ///////////////////////////////////////////////
 
-void print_arr(int arr[], int len)
-{
-	std::ostringstream oss;
-	oss << "[";
-	for (int i = 0; i < len; i++)
-	{
-		if (i != 0)
-			oss << ", ";
-		oss << arr[i];
-	}
-	oss << "]";
-	std::cout << oss.str() << std::endl;
-}
 
 void alg_run()
 {
