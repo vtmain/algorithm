@@ -25,6 +25,9 @@
     <ClCompile Include="src\sort\sort_entrance.cpp">
       <Filter>src\sort</Filter>
     </ClCompile>
+    <ClCompile Include="src\sort\insert.cpp">
+      <Filter>src\sort</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\algorithm.h">

@@ -44,7 +44,8 @@ void init_arr(int arr[], int len)
 void select_func(int arr[], int len)
 {
 	//bubble(arr, len);
-	quick(arr, len);
+	//quick(arr, len);
+	insert(arr, len);
 }
 
 void swap(int arr[], int i, int j)

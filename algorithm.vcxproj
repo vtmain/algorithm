@@ -22,6 +22,7 @@
     <ClCompile Include="src\algorithm.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\sort\bubble.cpp" />
+    <ClCompile Include="src\sort\insert.cpp" />
     <ClCompile Include="src\sort\quick.cpp" />
     <ClCompile Include="src\sort\sort_entrance.cpp" />
   </ItemGroup>

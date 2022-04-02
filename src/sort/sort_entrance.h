@@ -11,5 +11,6 @@ void print_arr(int arr[], int len);
 
 void bubble(int arr[], int len);
 void quick(int arr[], int len);
+void insert(int arr[], int len);
 
 
