@@ -28,6 +28,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\algorithm.h" />
+    <ClInclude Include="src\data\slist.h" />
     <ClInclude Include="src\sort\sort_entrance.h" />
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,9 @@
     <Filter Include="src\sort">
       <UniqueIdentifier>{00a96911-6bbd-470a-b175-dfaa4fc3134f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\data">
+      <UniqueIdentifier>{1aee2f38-5409-46be-b941-6b3a238fd4a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\algorithm.cpp">
@@ -35,6 +38,9 @@
     </ClInclude>
     <ClInclude Include="src\sort\sort_entrance.h">
       <Filter>src\sort</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\slist.h">
+      <Filter>src\data</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
