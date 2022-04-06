@@ -3,7 +3,7 @@ CC = g++
 
 CXXFLAGS := -Wall -O0 -m64 -g
 
-CPP := $(shell echo src/*.cpp src/sort/*.cpp)
+CPP := $(shell echo src/*.cpp src/sort/*.cpp src/data/*.cpp)
 OBJ := $(patsubst %.cpp, %.o, $(CPP))
 
 $(Target) : $(OBJ)

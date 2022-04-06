@@ -1,5 +1,6 @@
 ﻿#include "algorithm.h"
 #include "sort/sort_entrance.h"
+#include "data/slist.h"
 
 
 process_time::process_time(bool use_usec)
@@ -51,5 +52,7 @@ process_time::~process_time()
 
 void alg_run()
 {
-	sort();
+	//sort();
+
+	process_slist();
 }

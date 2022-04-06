@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\algorithm.cpp" />
+    <ClCompile Include="src\data\slist.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\sort\bubble.cpp" />
     <ClCompile Include="src\sort\insert.cpp" />

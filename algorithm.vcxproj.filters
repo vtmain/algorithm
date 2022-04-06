@@ -31,6 +31,9 @@
     <ClCompile Include="src\sort\insert.cpp">
       <Filter>src\sort</Filter>
     </ClCompile>
+    <ClCompile Include="src\data\slist.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\algorithm.h">
