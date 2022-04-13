@@ -45,6 +45,9 @@
     <ClInclude Include="src\data\slist.h">
       <Filter>src\data</Filter>
     </ClInclude>
+    <ClInclude Include="src\data\integer_range.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="makefile" />

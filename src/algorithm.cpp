@@ -1,6 +1,7 @@
 ﻿#include "algorithm.h"
 #include "sort/sort_entrance.h"
 #include "data/slist.h"
+#include "data/integer_range.h"
 
 
 process_time::process_time(bool use_usec)
@@ -54,5 +55,7 @@ void alg_run()
 {
 	//sort();
 
-	process_slist();
+	//process_slist();
+
+	test_integer();
 }
