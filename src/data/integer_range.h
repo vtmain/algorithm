@@ -11,6 +11,8 @@
 #include <climits>
 #include <bitset>
 
+#define IS_INT32_VAL(x) (INT_MIN <= (x) && (x) <= INT_MAX)
+
 template<typename T>
 void binary_output(T t)
 {
@@ -45,6 +47,18 @@ void test_integer()
 	std::cout << bn << ((bn > INT_MIN) ? " > " : " < ") << "INT_MIN(" << INT_MIN << ")" << std::endl;
 
 	int m = 1;
-	std::cout << (m << 16) << std::endl;
+	std::bitset<8 * sizeof(int)> bsm(m);
+	std::cout << m << std::endl;
+	std::cout << bsm << std::endl;
+
+	int n = m << 16;
+	std::bitset<8 * sizeof(int)> bsn(n);
+	std::cout << (n) << std::endl;
+	std::cout << bsn << std::endl;
+
+	int64_t j = ((int64_t)INT_MAX);
+	int64_t k = ((int64_t)INT_MAX) + 1;
+	std::cout << "j: " << j << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(j) << std::endl;
+	std::cout << "k: " << k << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(k) << std::endl;
 }
 

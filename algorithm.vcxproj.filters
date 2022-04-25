@@ -34,6 +34,9 @@
     <ClCompile Include="src\data\slist.cpp">
       <Filter>src\data</Filter>
     </ClCompile>
+    <ClCompile Include="src\data\binary_tree.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\algorithm.h">
@@ -46,6 +49,9 @@
       <Filter>src\data</Filter>
     </ClInclude>
     <ClInclude Include="src\data\integer_range.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\binary_tree.h">
       <Filter>src\data</Filter>
     </ClInclude>
   </ItemGroup>
