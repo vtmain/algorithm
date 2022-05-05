@@ -2,6 +2,7 @@
 #include "sort/sort_entrance.h"
 #include "data/slist.h"
 #include "data/integer_range.h"
+#include "data/binary_tree.h"
 
 
 process_time::process_time(bool use_usec)
@@ -57,5 +58,7 @@ void alg_run()
 
 	//process_slist();
 
-	test_integer();
+	//test_integer();
+
+	test_tree();
 }
