@@ -25,7 +25,7 @@
     <ClCompile Include="src\sort\quick.cpp">
       <Filter>src\sort</Filter>
     </ClCompile>
-    <ClCompile Include="src\sort\sort_entrance.cpp">
+    <ClCompile Include="src\sort\sort.cpp">
       <Filter>src\sort</Filter>
     </ClCompile>
     <ClCompile Include="src\sort\insert.cpp">
@@ -42,7 +42,7 @@
     <ClInclude Include="src\algorithm.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\sort\sort_entrance.h">
+    <ClInclude Include="src\sort\sort.h">
       <Filter>src\sort</Filter>
     </ClInclude>
     <ClInclude Include="src\data\slist.h">

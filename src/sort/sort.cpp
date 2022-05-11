@@ -1,4 +1,4 @@
-#include "sort_entrance.h"
+#include "sort.h"
 #include "../algorithm.h"
 #include <algorithm>
 

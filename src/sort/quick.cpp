@@ -1,4 +1,4 @@
-#include "sort_entrance.h"
+#include "sort.h"
 
 void partition(int arr[], int _l, int _r)
 {

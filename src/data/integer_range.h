@@ -16,6 +16,7 @@
 template<typename T>
 void binary_output(T t)
 {
+#ifndef _WIN32
 	T min_val = std::numeric_limits<T>::min();
 	T max_val = std::numeric_limits<T>::max();
 	const char* name = typeid(t).name();
@@ -25,6 +26,7 @@ void binary_output(T t)
 
 	std::bitset<8 * sizeof(T)> bs_max(max_val);
 	std::cout << "[type:" << name << "] max: " << max_val << "(" << bs_max << ")" << " [binary len:" << bs_max.size() << "]" << std::endl;
+#endif
 }
 
 void test_integer()

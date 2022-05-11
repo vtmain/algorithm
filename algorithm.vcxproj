@@ -26,14 +26,14 @@
     <ClCompile Include="src\sort\bubble.cpp" />
     <ClCompile Include="src\sort\insert.cpp" />
     <ClCompile Include="src\sort\quick.cpp" />
-    <ClCompile Include="src\sort\sort_entrance.cpp" />
+    <ClCompile Include="src\sort\sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\algorithm.h" />
     <ClInclude Include="src\data\binary_tree.h" />
     <ClInclude Include="src\data\integer_range.h" />
     <ClInclude Include="src\data\slist.h" />
-    <ClInclude Include="src\sort\sort_entrance.h" />
+    <ClInclude Include="src\sort\sort.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

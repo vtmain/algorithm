@@ -1,5 +1,5 @@
 ﻿#include "algorithm.h"
-#include "sort/sort_entrance.h"
+#include "sort/sort.h"
 #include "data/slist.h"
 #include "data/integer_range.h"
 #include "data/binary_tree.h"
@@ -61,4 +61,5 @@ void alg_run()
 	//test_integer();
 
 	test_tree();
+	test_search_tree();
 }

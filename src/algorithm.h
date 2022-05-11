@@ -10,7 +10,7 @@
 #include <sys/time.h>
 #endif
 
-#include "sort/sort_entrance.h"
+#include "sort/sort.h"
 
 class process_time
 {
