@@ -11,6 +11,9 @@
     <Filter Include="src\data">
       <UniqueIdentifier>{1aee2f38-5409-46be-b941-6b3a238fd4a0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\3rd">
+      <UniqueIdentifier>{d041b191-3e8e-4aa2-ad03-3e0c85b8d8b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\algorithm.cpp">
@@ -53,6 +56,12 @@
     </ClInclude>
     <ClInclude Include="src\data\binary_tree.h">
       <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\byte_order.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rd\portable_endian.h">
+      <Filter>src\3rd</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

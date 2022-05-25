@@ -22,8 +22,8 @@ private:
 	bool _usec;
 
 #ifdef _WIN32
-	unsigned long start;
-	unsigned long end;
+	int64_t start;
+	int64_t end;
 #else
 	int64_t start_ms;
 	int64_t end_ms;

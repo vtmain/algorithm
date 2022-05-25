@@ -28,7 +28,7 @@ void init_arr(int arr[], int len)
 		arr[i] = i + 1;
 
 #ifdef _WIN32
-	srand(GetTickCount64());
+	srand(static_cast<unsigned int>(GetTickCount64()));
 #else
 	srand(time(0));
 #endif
