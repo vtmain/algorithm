@@ -30,7 +30,7 @@ void binary_output(T t)
 	std::cout << "[type:" << name << "] max: " << max_val << "(" << bs_max << ")" << " [binary len:" << bs_max.size() << "]" << std::endl << std::endl;
 }
 
-void test_integer()
+void test_data_type_range()
 {
 	char a = '5';		// SCHAR_MIN;
 	short b = 5;		// SHRT_MAX;
@@ -48,28 +48,29 @@ void test_integer()
 	binary_output(f);
 	binary_output(dbl);
 
-	int64_t bp = (int64_t)INT_MAX + 1;
-	int64_t bn = (int64_t)INT_MIN - 1;
-	std::cout << bp << ((bp > INT_MAX) ? " > " : " < ") << "INT_MAX(" << INT_MAX << ")" << std::endl;
-	std::cout << bn << ((bn > INT_MIN) ? " > " : " < ") << "INT_MIN(" << INT_MIN << ")" << std::endl;
+	// int 超限 
+	int64_t j = (int64_t)INT_MAX + 1;
+	int64_t k = (int64_t)INT_MIN - 1;
+	std::cout << j << ((j > INT_MAX) ? " > " : " < ") << "INT_MAX(" << INT_MAX << "), is INT_32: " << std::boolalpha << IS_INT32_VAL(j) << std::endl;
+	std::cout << k << ((k > INT_MIN) ? " > " : " < ") << "INT_MIN(" << INT_MIN << "), is INT_32: " << std::boolalpha << IS_INT32_VAL(k) << std::endl;
 
-	int m = 1;
-	std::bitset<8 * sizeof(int)> bsm(m);
-	std::cout << m << std::endl;
-	std::cout << bsm << std::endl;
+// 	int m = 1;
+// 	std::bitset<8 * sizeof(int)> bsm(m);
+// 	std::cout << m << std::endl;
+// 	std::cout << bsm << std::endl;
+// 
+// 	int n = m << 16;
+// 	std::bitset<8 * sizeof(int)> bsn(n);
+// 	std::cout << (n) << std::endl;
+// 	std::cout << bsn << std::endl;
 
-	int n = m << 16;
-	std::bitset<8 * sizeof(int)> bsn(n);
-	std::cout << (n) << std::endl;
-	std::cout << bsn << std::endl;
-
-	int64_t j = ((int64_t)INT_MAX);
-	int64_t k = ((int64_t)INT_MAX) + 1;
-	std::cout << "j: " << j << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(j) << std::endl;
-	std::cout << "k: " << k << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(k) << std::endl;
+//	int64_t j = ((int64_t)INT_MAX);
+// 	int64_t k = ((int64_t)INT_MAX) + 1;
+// 	std::cout << "j: " << j << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(j) << std::endl;
+// 	std::cout << "k: " << k << ", is INT_32: " << std::boolalpha << IS_INT32_VAL(k) << std::endl;
 }
 
-void test_range()
+void test_data_type_byte()
 {
 	// test value
 	int n = 1024;	// 2^10 [0100 0000 0000]
