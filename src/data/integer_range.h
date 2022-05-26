@@ -18,17 +18,16 @@
 template<typename T>
 void binary_output(T t)
 {
-#ifndef _WIN32
-	T min_val = std::numeric_limits<T>::min();
-	T max_val = std::numeric_limits<T>::max();
+	T min_val = (std::numeric_limits<T>::min)();
+	T max_val = (std::numeric_limits<T>::max)();
 	const char* name = typeid(t).name();
 
+	// linux环境，name只输出单字符，比如int输出"i"，用"./alg | c++filt -t"可以完整输出名称"int"
 	std::bitset<8 * sizeof(T)> bs_min(*((uint64_t*)&min_val));
 	std::cout << "[type:" << name << "] min: " << min_val << "(" << bs_min << ")" << " [binary len:" << bs_min.size() << "]" << std::endl;
 
 	std::bitset<8 * sizeof(T)> bs_max(*((uint64_t*)&max_val));
 	std::cout << "[type:" << name << "] max: " << max_val << "(" << bs_max << ")" << " [binary len:" << bs_max.size() << "]" << std::endl << std::endl;
-#endif
 }
 
 void test_integer()
