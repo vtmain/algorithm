@@ -31,6 +31,7 @@
   <ItemGroup>
     <ClInclude Include="src\3rd\portable_endian.h" />
     <ClInclude Include="src\algorithm.h" />
+    <ClInclude Include="src\data\avl_tree.h" />
     <ClInclude Include="src\data\binary_tree.h" />
     <ClInclude Include="src\data\byte_order.h" />
     <ClInclude Include="src\data\integer_range.h" />

@@ -1,6 +1,6 @@
 ﻿/************************************************************************
-*  FileName:	rb_tree
-*  Description:	红黑树
+*  FileName:	avl_tree
+*  Description:	平衡二叉树
 *  Author:		phil
 *  Date:		2022-06-06
 *  Version:		
@@ -12,16 +12,20 @@
 #include <queue>
 #include "binary_tree.h"
 
-class RBTree : BinaryTree
+class AVLTree : BinaryTree
 {
 public:
-	RBTree()
+	AVLTree()
 		: BinaryTree()
 	{}
 
-	RBTree(int val)
+	AVLTree(int val)
 		: BinaryTree(val)
 	{}
 
-	virtual ~RBTree() {}
+	virtual ~AVLTree() {}
+
+	// 左旋
+
+	// 右旋
 };
