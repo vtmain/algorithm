@@ -34,6 +34,7 @@
     <ClInclude Include="src\data\binary_tree.h" />
     <ClInclude Include="src\data\byte_order.h" />
     <ClInclude Include="src\data\integer_range.h" />
+    <ClInclude Include="src\data\rb_tree.h" />
     <ClInclude Include="src\data\slist.h" />
     <ClInclude Include="src\sort\sort.h" />
   </ItemGroup>
