@@ -9,12 +9,14 @@
 *          【3】           【7】
 *          /   \           /   \
 *     【2】    【4】   【6】   【8】
+*      /                          \
+*  【1】                          【9】
 * 
 */
 
 void BinaryTree::insert_left(int val)
 {
-	BinaryTree* node = create_tree(val);
+	BinaryTree* node = create_node(val);
 	if (this->left_child == NULL)
 	{
 		this->left_child = node;
@@ -29,7 +31,7 @@ void BinaryTree::insert_left(int val)
 
 void BinaryTree::insert_right(int val)
 {
-	BinaryTree* node = create_tree(val);
+	BinaryTree* node = create_node(val);
 	if (this->right_child == NULL)
 	{
 		this->right_child = node;
@@ -106,9 +108,15 @@ bool BinarySearchTree::remove(int val, BinaryTree* parent)
 		}
 		else	// 自己的左右节点都不为空
 		{
-			// 找到自己右子树中最小值，放到当前自己位置，然后删除那个最小值节点
-			data = right_child->find_min_val();
-			right_child->remove(data, this);
+			// 有两种方式，效果一致，仍然保持二叉搜索树性质
+			
+			// [前驱]找到自己左子树中最大值，放到当前自己位置，然后删除那个最大值节点
+			data = left_child->find_max_val();
+			left_child->remove(data, this);
+
+			// [后继]或者找到右子树中最小值，放到当前自己位置，然后删除那个最小值节点
+			//data = right_child->find_min_val();
+			//right_child->remove(data, this);
 		}
 		return true;
 	}
@@ -118,6 +126,14 @@ int BinarySearchTree::find_min_val()
 {
 	if (left_child)
 		return left_child->find_min_val();
+	else
+		return data;
+}
+
+int BinarySearchTree::find_max_val()
+{
+	if (right_child)
+		return right_child->find_max_val();
 	else
 		return data;
 }
@@ -182,28 +198,29 @@ void BinaryTree::bfs()
 	std::cout << std::endl;
 }
 
-BinaryTree* create_tree(int val)
+BinaryTree* create_node(int val)
 {
 	BinaryTree* root = new BinarySearchTree(val);
 	std::cout << "create tree node[" << root->get_data() << "] left[" << root->get_left_child() << "] right[" << root->get_right_child() << "]" << std::endl;
 	return root;
 }
 
-
-
-void test_tree()
+BinaryTree* create_tree()
 {
-	BinaryTree* root = create_tree(5);
-	root->insert_left(3);
-	root->insert_right(7);
+	BinaryTree* root = create_node(5);
+	int arr[] = { 3, 7, 2, 4, 6, 8, 9, 1 };
+	int len = (int)sizeof(arr) / (int)sizeof(int);
+	for (int i = 0; i < len; i++)
+	{
+		root->insert(arr[i]);
+	}
+	return root;
+}
 
-	root->get_left_child()->insert_left(2);
-	root->get_left_child()->insert_right(4);
-
-	root->get_right_child()->insert_left(6);
-	root->get_right_child()->insert_right(8);
-
-	// ----------------------------
+void traverse(BinaryTree* root)
+{
+	if (!root)
+		return;
 
 	// 前序遍历
 	std::cout << "pre  order: ";
@@ -226,16 +243,14 @@ void test_tree()
 
 void test_search_tree()
 {
-	BinaryTree* root = create_tree(5);
-	int arr[] = {3, 7, 2, 4, 6, 8, 9, 1};
-	int len = (int)sizeof(arr) / (int)sizeof(int);
-	for (int i = 0; i < len; i++)
-	{
-		root->insert(arr[i]);
-	}
-	root->bfs();
+	BinaryTree* root = create_tree();
 
-	// 不能删除root节点
-	root->remove(7, root);
-	root->bfs();
+	// 遍历
+	traverse(root);
+
+	// 删除节点
+	int val_to_del = 7;
+	root->remove(val_to_del, root);
+	std::cout << "delete " << val_to_del << std::endl;
+	traverse(root);
 }

@@ -58,9 +58,8 @@ void alg_run()
 
 	//process_slist();
 
-	test_data_type_range();
+	//test_data_type_range();
 	//test_data_type_byte();
 
-// 	test_tree();
-// 	test_search_tree();
+ 	test_search_tree();
 }

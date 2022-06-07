@@ -49,11 +49,12 @@ public:
 	// 删除(虚函数，子类来实现)
 	virtual bool remove(int val, BinaryTree* parent) { return false; };
 
-	// 找到最小值(虚函数，子类来实现)
+	// 找到最大/最小值(虚函数，子类来实现)
 	virtual int find_min_val() { return data; };
+	virtual int find_max_val() { return data; };
 
 	/////////////////////////////////////////////////////////////
-	// 深度优先遍历(DFS)
+	// 深度优先遍历(DFS, Depth-First Search), 常用来解决最大路径问题
 	// 沿特定路径遍历到叶子节点再回溯(backtracking)进入临近路径继续遍历
 	// 在输出遍历结果时，根据父节点相对子节点输出顺序不同，DFS可细分为先序、中序、后序三种
 
@@ -67,7 +68,9 @@ public:
 	void post_order();
 
 	/////////////////////////////////////////////////////////////
-	// 广度优先遍历(BFS)
+	// 广度优先遍历(BFS, Breadth-First Search)，也叫宽度优先遍历
+	// 按照节点深度逐层遍历树结构
+	// 图的基础算法之一，常用来解决最短路径问题
 	void bfs();
 
 protected:
@@ -93,13 +96,17 @@ public:
 	// 删除
 	virtual bool remove(int val, BinaryTree* parent);
 
-	// 找到最小值
+	// 找到最大/最小值
 	virtual int find_min_val();
+	virtual int find_max_val();
 };
 
 // 创建一棵树，根节点
-BinaryTree* create_tree(int val);
+BinaryTree* create_node(int val);
+BinaryTree* create_tree();
+
+// 遍历一棵树
+void traverse(BinaryTree* root);
 
 // test
-void test_tree();
 void test_search_tree();
