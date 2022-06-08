@@ -11,7 +11,8 @@
 *     【2】    【4】   【6】   【8】
 *      /                          \
 *  【1】                          【9】
-* 
+*                                    \
+*                                   【10】
 */
 
 void BinaryTree::insert_left(int val)
@@ -208,7 +209,7 @@ BinaryTree* create_node(int val)
 BinaryTree* create_tree()
 {
 	BinaryTree* root = create_node(5);
-	int arr[] = { 3, 7, 2, 4, 6, 8, 9, 1 };
+	int arr[] = { 3, 7, 2, 4, 6, 8, 9, 1, 10};
 	int len = (int)sizeof(arr) / (int)sizeof(int);
 	for (int i = 0; i < len; i++)
 	{
