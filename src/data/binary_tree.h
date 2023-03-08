@@ -15,11 +15,11 @@ class BinaryTree
 {
 public:
 	BinaryTree()
-		: data(0), left_child(NULL), right_child(NULL)
+		: data(0), height(0), left_child(NULL), right_child(NULL)
 	{}
 
 	BinaryTree(int val)
-		: data(val), left_child(NULL), right_child(NULL)
+		: data(val), height(0), left_child(NULL), right_child(NULL)
 	{}
 
 	virtual ~BinaryTree() {}
@@ -27,6 +27,8 @@ public:
 	int get_data() { return data; }
 	BinaryTree* get_left_child() { return left_child; }
 	BinaryTree* get_right_child() { return right_child; }
+
+	int get_height() { return height; }
 
 	bool is_left_child(BinaryTree* node) { return (node == left_child); }
 	bool is_right_child(BinaryTree* node) { return (node == right_child); }
@@ -75,6 +77,7 @@ public:
 
 protected:
 	int data;
+	int height;
 	BinaryTree* left_child;
 	BinaryTree* right_child;
 };
