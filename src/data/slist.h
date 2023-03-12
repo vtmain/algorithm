@@ -39,5 +39,6 @@ void dump_list(ListNode* head);
 // 单链表翻转
 ListNode* reverse(ListNode* head);
 ListNode* reverse2(ListNode* head);
+// 单链表翻转(自己写一遍)
 ListNode* r1(ListNode* head);
 ListNode* r2(ListNode* head);

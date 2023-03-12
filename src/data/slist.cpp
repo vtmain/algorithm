@@ -50,11 +50,18 @@ void process_slist()
 // 递归  recurse
 ListNode* reverse(ListNode* head)
 {
+	// 最后一个节点，返回的是自己，实现找到rhead
 	if (head == NULL || head->next == NULL)
 		return head;
 
+	// 先对剩余节点做递归(逻辑顺序)，最后一个节点返回的head，即为rhead
+	// 在整个递归过程中，rhead取到后就不再变化了，一直返回
 	ListNode* rest = head->next;
 	ListNode* rhead = reverse(rest);
+
+	// 递归返回上一层后:
+	//   把下一层的next指向自己，实现反转(rest是原本的下一个节点，head是原本的上一个节点)
+	//   把自己的next置空，留到上一层处理，没有上一层的话，就保持空值，自然就是反转后的尾结点
 	rest->next = head;
 	head->next = NULL;
 	return rhead;
