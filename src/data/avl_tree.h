@@ -1,4 +1,4 @@
-﻿/************************************************************************
+/************************************************************************
 *  FileName:	avl_tree
 *  Description:	平衡二叉树
 *  Author:		phil
@@ -15,27 +15,27 @@
 class AVLTree : BinaryTree
 {
 public:
-	AVLTree()
-		: BinaryTree()
-	{}
+    AVLTree()
+        : BinaryTree()
+    {}
 
-	AVLTree(int val)
-		: BinaryTree(val)
-	{}
+    AVLTree(int val)
+        : BinaryTree(val)
+    {}
 
-	virtual ~AVLTree() {}
+    virtual ~AVLTree() {}
 
-	// 左旋
-	BinaryTree* rotate_left(BinaryTree* root);
+    // 左旋
+    BinaryTree* rotate_left(BinaryTree* root);
 
-	// 右旋
-	BinaryTree* rotate_right(BinaryTree* root);
+    // 右旋
+    BinaryTree* rotate_right(BinaryTree* root);
 
-	// 获取平衡因子
-	// BalanceFactor = LeftNode.height - RightNode.height
-	int get_balance_factor()
-	{
-		return left_child->get_height() - right_child->get_height();
-	}
+    // 获取平衡因子
+    // BalanceFactor = LeftNode.height - RightNode.height
+    int get_balance_factor()
+    {
+        return left_child->get_height() - right_child->get_height();
+    }
 
 };

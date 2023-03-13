@@ -1,4 +1,4 @@
-﻿#include "algorithm.h"
+#include "algorithm.h"
 #include "sort/sort.h"
 #include "data/slist.h"
 #include "data/integer_range.h"

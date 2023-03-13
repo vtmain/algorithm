@@ -1,4 +1,4 @@
-﻿#include "binary_tree.h"
+#include "binary_tree.h"
 #include <iostream>
 
 // https://zhuanlan.zhihu.com/p/30918614

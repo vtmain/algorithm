@@ -4,26 +4,26 @@
 
 void sort()
 {
-	// ³õÊ¼»¯Êı×é
+	// åˆå§‹åŒ–æ•°ç»„
 	int arr[20] = {};
 	int len = sizeof(arr) / sizeof(int);
 	init_arr(arr, len);
 
-	// ´òÓ¡³õÊ¼Êı×é£¬²¢¿ªÊ¼¼ÆÊ±
+	// æ‰“å°åˆå§‹æ•°ç»„ï¼Œå¹¶å¼€å§‹è®¡æ—¶
 	std::cout << "arr size: " << len << std::endl;
 	print_arr(arr, len);
 	process_time pt(true);
 
-	// Ñ¡ÔñÒ»ÖÖÅÅĞò·½·¨Ö´ĞĞ
+	// é€‰æ‹©ä¸€ç§æ’åºæ–¹æ³•æ‰§è¡Œ
 	select_func(arr, len);
 
-	// ´òÓ¡ÅÅĞò½á¹û
+	// æ‰“å°æ’åºç»“æœ
 	print_arr(arr, len);
 }
 
 void init_arr(int arr[], int len)
 {
-	// Ë³ĞòÌî³älen¸öÊı×Ö
+	// é¡ºåºå¡«å……lenä¸ªæ•°å­—
 	for (int i = 0; i < len; i++)
 		arr[i] = i + 1;
 
@@ -33,7 +33,7 @@ void init_arr(int arr[], int len)
 	srand(time(0));
 #endif
 
-	// ÂÒĞòËã·¨(Ï´ÅÆËã·¨)
+	// ä¹±åºç®—æ³•(æ´—ç‰Œç®—æ³•)
 	for (int k = len - 1; k >= 0; k--)
 	{
 		int n = rand() % (k + 1);
