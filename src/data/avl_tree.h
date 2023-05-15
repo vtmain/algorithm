@@ -32,9 +32,9 @@ public:
     BinaryTree* rotate_right(BinaryTree* root);
 
     // 获取平衡因子
-    // BalanceFactor = LeftNode.height - RightNode.height
     int get_balance_factor()
     {
+        // BalanceFactor = LeftNode.height - RightNode.height
         return left_child->get_height() - right_child->get_height();
     }
 

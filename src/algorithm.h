@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <sstream>
+#include <algorithm>
 
 #ifdef _WIN32
 #include "windows.h"
@@ -15,11 +16,11 @@
 class process_time
 {
 public:
-	process_time(bool use_usec);
+	process_time(bool use_usec = false);
 	~process_time();
 
 private:
-	bool _usec;
+	bool _us; 	// 是否使用微秒计时(true:微秒us false:毫秒ms)
 
 #ifdef _WIN32
 	int64_t start;

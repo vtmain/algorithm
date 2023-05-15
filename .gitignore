@@ -1,5 +1,6 @@
 alg
 /.vs
+/.vscode
 /*.vcxproj
 /*.user
 /*.swp

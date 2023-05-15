@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <vector>
 
 void partition(int arr[], int _l, int _r)
 {
@@ -19,7 +20,7 @@ void partition(int arr[], int _l, int _r)
 			// 小数左移至当前left指向位置
 			arr[left] = arr[right];
 
-			// 同时left向右移一位，因为此时left指向位置刚刚被大数填充，没有必要再比较一次
+			// 同时left向右移一位，因为此时left指向位置刚刚被从右侧移过来的小数填充，没有必要再比较一次
 			if (left < right)
 				left++;
 
@@ -32,7 +33,7 @@ void partition(int arr[], int _l, int _r)
 			// 大数右移至当前right指向位置
 			arr[right] = arr[left];
 
-			// 同时right向左移一位，原因同上，right指向位置刚刚被大数填充，下次又要切换回从右边扫描了
+			// 同时right向左移一位，原因同上，right指向位置刚刚被从左侧移过来的大数填充，下次又要切换回从右边扫描了
 			if (left < right)
 				right--;
 		}
@@ -73,6 +74,11 @@ void pa(int arr[], int _l, int _r)
 		pa(arr, _l, left - 1);
 		pa(arr, right + 1, _r);
 	}
+}
+
+void partion_it(std::vector<int>& _vec)
+{
+	
 }
 
 void quick(int arr[], int len)
