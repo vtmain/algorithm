@@ -16,9 +16,6 @@ void bubble_improve_1(int arr[], int len);
 void bubble_improve_2(int arr[], int len);
 void bubble_improve_3(int arr[], int len);
 
-// 快速排序
-void quick(int arr[], int len);
-
 // 插入排序
 void insert(int arr[], int len);
 

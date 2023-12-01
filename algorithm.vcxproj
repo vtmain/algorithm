@@ -37,6 +37,8 @@
     <ClInclude Include="src\data\integer_range.h" />
     <ClInclude Include="src\data\rb_tree.h" />
     <ClInclude Include="src\data\slist.h" />
+    <ClInclude Include="src\search\binary_search.h" />
+    <ClInclude Include="src\search\search.h" />
     <ClInclude Include="src\sort\sort.h" />
   </ItemGroup>
   <ItemGroup>

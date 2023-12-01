@@ -14,6 +14,12 @@
     <Filter Include="src\3rd">
       <UniqueIdentifier>{d041b191-3e8e-4aa2-ad03-3e0c85b8d8b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\search">
+      <UniqueIdentifier>{bc980df9-0a82-46ba-bf18-6ed909340281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\string">
+      <UniqueIdentifier>{5d5b9793-9c30-4364-a4b9-baa957dc015c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\algorithm.cpp">
@@ -68,6 +74,12 @@
     </ClInclude>
     <ClInclude Include="src\data\avl_tree.h">
       <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\search\binary_search.h">
+      <Filter>src\search</Filter>
+    </ClInclude>
+    <ClInclude Include="src\search\search.h">
+      <Filter>src\search</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

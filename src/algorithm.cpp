@@ -73,7 +73,7 @@ void get_all(std::vector<menu_item>& _vec)
 {
 	_vec.clear();
 	_vec.push_back(menu_item(1, "排序算法", sort));
-	_vec.push_back(menu_item(2, "单链表反转", process_slist));
+	_vec.push_back(menu_item(2, "链表", process_slist));
 }
 
 void show_menu(const std::vector<menu_item>& _vec)

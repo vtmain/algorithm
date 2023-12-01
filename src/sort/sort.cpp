@@ -1,6 +1,7 @@
 #include "sort.h"
 #include "../algorithm.h"
 #include <algorithm>
+#include "quick.h"
 
 void sort()
 {
